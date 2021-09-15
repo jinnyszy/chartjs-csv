@@ -1,5 +1,9 @@
 import React, { useRef } from "react";
 import { CSVReader } from "react-papaparse";
+import data from '../test.csv';
+
+const year = [];
+const idx = [];
 
 function Navigation({ uploadFile, isValid, children }) {
   const buttonRef = useRef();
